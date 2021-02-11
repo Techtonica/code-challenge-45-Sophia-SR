@@ -10,9 +10,18 @@
 
 
 function max_end3(int_array){
-  // Add functionality here!
-  return
-}
-
+  let newArr = [];
+    if (int_array[0] > int_array[int_array.length-1]){
+     for (let i = 0; i < int_array.length; i++){
+       newArr.push(int_array[0])
+     }
+    } else {
+      for (let i = 0; i < int_array.length; i++){
+        newArr.push(int_array[int_array.length-1])
+    }
+     return newArr
+    }
+  }
+  
 
 module.exports = max_end3;
